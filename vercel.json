@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "bootstraprag/templates/llamaindex/rag_with_self_correction/api_server.py",
+      "src": "bootstraprag/templates/llamaindex/simple_rag/api_server.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "bootstraprag/templates/llamaindex/rag_with_self_correction/api_server.py"
+      "dest": "bootstraprag/templates/llamaindex/simple_rag/api_server.py"
     }
   ]
 }
